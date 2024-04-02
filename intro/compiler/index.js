@@ -1,2 +1,2 @@
 "use strict";
-let title = "Hello World";
+console.log("index.ts");
