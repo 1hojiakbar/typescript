@@ -1,5 +1,6 @@
 "use strict";
 // *data types: string, number, bigInt, symbol, boolean null undefined
+// Basic Syntax and rules
 // let title = "data types";
 // title = 777; // => error
 // malumotlar turlarini boshlang'ish qiymat turini keyinchalik boshqa turga mansub qiymatga belgilab ketish mumkin emas
@@ -31,3 +32,9 @@
 // let und = null;
 // und = undefined;
 // console.log(und); // undefined
+// ===================
+// Symbol
+let sym = Symbol("id:1");
+// sym = null; // error
+sym = Symbol("id:2"); // success
+console.log(sym); // id:2

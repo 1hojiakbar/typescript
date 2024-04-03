@@ -1,5 +1,6 @@
 // *data types: string, number, bigInt, symbol, boolean null undefined
 
+// Basic Syntax and rules
 // let title = "data types";
 
 // title = 777; // => error
@@ -50,3 +51,14 @@
 // und = undefined;
 
 // console.log(und); // undefined
+
+// ===================
+
+// Symbol
+let sym: symbol = Symbol("id:1");
+
+// sym = null; // error
+
+sym = Symbol("id:2"); // success
+
+console.log(sym); // id:2
