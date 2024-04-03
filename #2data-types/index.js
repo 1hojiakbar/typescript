@@ -1,5 +1,5 @@
 "use strict";
-// *data types: string, number, bigInt, symbol, boolean null undefined
+// *data types: string, number, bigInt, null undefined, symbol, boolean
 // Basic Syntax and rules
 // let title = "data types";
 // title = 777; // => error
@@ -34,7 +34,13 @@
 // console.log(und); // undefined
 // ===================
 // Symbol
-let sym = Symbol("id:1");
+// let sym: symbol = Symbol("id:1");
 // sym = null; // error
-sym = Symbol("id:2"); // success
-console.log(sym); // id:2
+// sym = Symbol("id:2"); // success
+// console.log(sym); // id:2
+// ===================
+// Boolean
+// let bool: boolean = true;
+// bool = 12; // error
+// bool = false; // success
+// console.log(bool); // false
