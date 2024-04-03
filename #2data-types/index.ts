@@ -10,13 +10,22 @@
 // ===================
 
 // String
-let str: string = "abc"; // success
+// let str: string = "abc"; // success
 
-let strs: string = 123; // error
+// let strs: string = 123; // error
 
 // ===================
 
 // Number
-let num: number = "abc"; // => error
+// let num: number = "abc"; // => error
 
-let nums: number = 123; // => success
+// let nums: number = 123; // => success
+
+// ===================
+
+// BigInt
+let big: bigint = 123n; // bigInt ES2020-version"da chiqani uchun ES2020"dan oldingi versiyalar buni qo'llab quvatlamaydi
+
+// big = 123 // error
+
+// big = 123n // success

@@ -6,9 +6,14 @@
 // console.log(title);
 // ===================
 // String
-let str = "abc"; // success
-let strs = 123; // error
+// let str: string = "abc"; // success
+// let strs: string = 123; // error
 // ===================
 // Number
-let num = "abc"; // => error
-let nums = 123; // => success
+// let num: number = "abc"; // => error
+// let nums: number = 123; // => success
+// ===================
+// BigInt
+let big = 123n; // bigInt ES2020-version"da chiqani uchun ES2020"dan oldingi versiyalar buni qo'llab quvatlamaydi
+// big = 123 // error
+// big = 123n // success
