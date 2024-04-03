@@ -53,7 +53,12 @@
 // console.log(obj); // { age: 16 }
 // ===================
 // Array
-let arr = [1, 2, 3];
-arr = ["abc", "cba"]; // error
-arr = [321, 123]; // success
-console.log(arr); // [ 321, 123 ]
+// let arr: number[] = [1, 2, 3];
+// arr = ["abc", "cba"]; // error
+// arr = [321, 123]; // success
+// console.log(arr); // [ 321, 123 ]
+// ===================
+// Function
+// the basic synta is function
+function getParams(letter, num) { }
+console.log(getParams("abc", 123));

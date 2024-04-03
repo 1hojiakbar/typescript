@@ -90,10 +90,18 @@
 // ===================
 
 // Array
-let arr: number[] = [1, 2, 3];
+// let arr: number[] = [1, 2, 3];
 
-arr = ["abc", "cba"]; // error
+// arr = ["abc", "cba"]; // error
 
-arr = [321, 123]; // success
+// arr = [321, 123]; // success
 
-console.log(arr); // [ 321, 123 ]
+// console.log(arr); // [ 321, 123 ]
+
+// ===================
+
+// Function
+// the basic synta is function
+function getParams(letter: string, num: number) {}
+
+console.log(getParams("abc", 123));
