@@ -113,8 +113,8 @@
 
 // console.log(getParams("abc", 123).toUpperCase()); // error
 
-function getParams(letter: string, num: number): string {
-  return letter;
-}
+// function getParams(letter: string, num: number): string {
+//   return letter;
+// }
 
-console.log(getParams("abc", 123).toUpperCase()); // success
+// console.log(getParams("abc", 123).toUpperCase()); // success

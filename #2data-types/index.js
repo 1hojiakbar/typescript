@@ -67,7 +67,7 @@
 //   return num;
 // }
 // console.log(getParams("abc", 123).toUpperCase()); // error
-function getParams(letter, num) {
-    return letter;
-}
-console.log(getParams("abc", 123).toUpperCase()); // success
+// function getParams(letter: string, num: number): string {
+//   return letter;
+// }
+// console.log(getParams("abc", 123).toUpperCase()); // success
