@@ -102,6 +102,19 @@
 
 // Function
 // the basic synta is function
-function getParams(letter: string, num: number) {}
+// function getParams(letter: string, num: number) {}
 
-console.log(getParams("abc", 123));
+// console.log(getParams("abc", 123));
+
+// ====
+// function getParams(letter: string, num: number) {
+//   return num;
+// }
+
+// console.log(getParams("abc", 123).toUpperCase()); // error
+
+function getParams(letter: string, num: number): string {
+  return letter;
+}
+
+console.log(getParams("abc", 123).toUpperCase()); // success
