@@ -8,7 +8,7 @@
 
 // console.log(title);
 
-// ===================
+// *Primitive data types usage
 
 // String
 // let str: string = "abc"; // success
@@ -73,3 +73,16 @@
 // bool = false; // success
 
 // console.log(bool); // false
+
+// ================================================
+
+// Non-Primitive data types usage
+
+// Object
+let obj: { age: number } = { age: 12 };
+
+// obj.age = "abc"; // error
+
+obj = { age: 16 };
+
+console.log(obj); // { age: 16 }

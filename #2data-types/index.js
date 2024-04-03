@@ -5,7 +5,7 @@
 // title = 777; // => error
 // malumotlar turlarini boshlang'ish qiymat turini keyinchalik boshqa turga mansub qiymatga belgilab ketish mumkin emas
 // console.log(title);
-// ===================
+// *Primitive data types usage
 // String
 // let str: string = "abc"; // success
 // let strs: string = 123; // error
@@ -44,3 +44,10 @@
 // bool = 12; // error
 // bool = false; // success
 // console.log(bool); // false
+// ================================================
+// Non-Primitive data types usage
+// Object
+let obj = { age: 12 };
+// obj.age = "abc"; // error
+obj = { age: 16 };
+console.log(obj); // { age: 16 }
