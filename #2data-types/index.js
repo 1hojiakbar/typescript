@@ -47,7 +47,13 @@
 // ================================================
 // Non-Primitive data types usage
 // Object
-let obj = { age: 12 };
+// let obj: { age: number } = { age: 12 };
 // obj.age = "abc"; // error
-obj = { age: 16 };
-console.log(obj); // { age: 16 }
+// obj = { age: 16 }; // success
+// console.log(obj); // { age: 16 }
+// ===================
+// Array
+let arr = [1, 2, 3];
+arr = ["abc", "cba"]; // error
+arr = [321, 123]; // success
+console.log(arr); // [ 321, 123 ]
