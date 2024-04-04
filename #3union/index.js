@@ -14,3 +14,5 @@
 // let num3: any = true; // success
 // #description "any" kalit so'zi bizga hohlagan turdagi qiymatni qabul qiluvchi o'zgaruvchi yaratishga yordam beradi
 // ===================
+let language = "uzbek";
+console.log(language); // uzbek

@@ -22,3 +22,7 @@
 // #description "any" kalit so'zi bizga hohlagan turdagi qiymatni qabul qiluvchi o'zgaruvchi yaratishga yordam beradi
 
 // ===================
+
+let language: "uzbek" | "english" | "rus" = "uzbek";
+
+console.log(language); // uzbek
