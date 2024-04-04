@@ -20,4 +20,9 @@ const data = [
     { id: 2, value: "english" },
     { id: 3, value: "rus" },
 ];
-console.log(data);
+data.map((lang) => {
+    if (lang.value === "uzbek" ||
+        lang.value === "english" ||
+        lang.value === "rus")
+        language = lang.value;
+});
