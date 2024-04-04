@@ -1,5 +1,7 @@
 // Union
 
+// union => o'zgaruvchiga birdan ko'p bo'lgan data turlarini biriktirish mumkin bo'lgan type"ni ifodalash.
+
 // sring | number | etc.
 // let str1: number = "123"; // error
 
@@ -13,8 +15,10 @@
 // ===================
 
 // any
-let num: any = 123; // success
-let num2: any = "abc"; // success
-let num3: any = true; // success
+// let num: any = 123; // success
+// let num2: any = "abc"; // success
+// let num3: any = true; // success
 
 // #description "any" kalit so'zi bizga hohlagan turdagi qiymatni qabul qiluvchi o'zgaruvchi yaratishga yordam beradi
+
+// ===================
