@@ -7,4 +7,14 @@
 
 // console.log(str2); // 123
 
+// #description biz | belgisidan foydalanib bir o'zgaruvchi 2ta va undan ko'proq boshqa turga mansub qiymatlarni
+// qabul qilishini ifodalay olamiz
+
 // ===================
+
+// any
+let num: any = 123; // success
+let num2: any = "abc"; // success
+let num3: any = true; // success
+
+// #description "any" kalit so'zi bizga hohlagan turdagi qiymatni qabul qiluvchi o'zgaruvchi yaratishga yordam beradi
