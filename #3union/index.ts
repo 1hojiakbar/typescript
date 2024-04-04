@@ -25,4 +25,10 @@
 
 let language: "uzbek" | "english" | "rus" = "uzbek";
 
-console.log(language); // uzbek
+const data = [
+  { id: 1, value: "uzbek" },
+  { id: 2, value: "english" },
+  { id: 3, value: "rus" },
+];
+
+console.log(data);

@@ -15,4 +15,9 @@
 // #description "any" kalit so'zi bizga hohlagan turdagi qiymatni qabul qiluvchi o'zgaruvchi yaratishga yordam beradi
 // ===================
 let language = "uzbek";
-console.log(language); // uzbek
+const data = [
+    { id: 1, value: "uzbek" },
+    { id: 2, value: "english" },
+    { id: 3, value: "rus" },
+];
+console.log(data);
