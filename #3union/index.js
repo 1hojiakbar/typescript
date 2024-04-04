@@ -16,7 +16,7 @@
 // ===================
 let language = "uzbek";
 const data = [
-    { id: 1, value: "uzbek" },
+    { value: "uzbek" },
     { id: 2, value: "english" },
     { id: 3, value: "rus" },
 ];
