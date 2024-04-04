@@ -21,8 +21,5 @@ const data = [
     { id: 3, value: "rus" },
 ];
 data.map((lang) => {
-    if (lang.value === "uzbek" ||
-        lang.value === "english" ||
-        lang.value === "rus")
-        language = lang.value;
+    language = lang.value;
 });

@@ -25,17 +25,12 @@
 
 let language: "uzbek" | "english" | "rus" = "uzbek";
 
-const data = [
+const data: { id: number; value: "uzbek" | "english" | "rus" }[] = [
   { id: 1, value: "uzbek" },
   { id: 2, value: "english" },
   { id: 3, value: "rus" },
 ];
 
 data.map((lang) => {
-  if (
-    lang.value === "uzbek" ||
-    lang.value === "english" ||
-    lang.value === "rus"
-  )
-    language = lang.value;
+  language = lang.value;
 });
