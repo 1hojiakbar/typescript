@@ -1,4 +1,3 @@
-"use strict";
 // Union
 // union => o'zgaruvchiga birdan ko'p bo'lgan data turlarini biriktirish mumkin bo'lgan type"ni ifodalash.
 // sring | number | etc.
