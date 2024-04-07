@@ -31,3 +31,23 @@ interface Data {
 }
 
 // #discription: TypeScript-da interfeys ob'ekt rioya qilishi kerak bo'lgan shartnomani belgilaydi.
+
+// =========================
+
+// Example:
+type Lang = "uzbek" | "english" | "rus";
+
+interface Obj {
+  id?: number;
+  value: Lang;
+}
+
+type DataType = Obj[];
+
+const data: DataType = [
+  { value: "uzbek" },
+  { id: 2, value: "english" },
+  { id: 3, value: "rus" },
+];
+
+// interface"lar bizga array ichidagi object"larni soddalashtirib yozish uchun qo'l keladi.
