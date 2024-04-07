@@ -56,8 +56,26 @@
 
 // interface vs type
 
-type Obj = {
-  age: number;
-};
+// type Obj = {
+//   age: number;
+// };
 
-type Obj = {}; // error: Duplicate identifier 'Obj'
+// type Obj = {}; // error: Duplicate identifier 'Obj'
+
+// biz agar type kalit so'zi bilan ikkta bir xil malumot turi yaratsak bizga error kelib chiqadi
+
+// ============
+
+// interface vs type
+
+interface Data {
+  name: string;
+}
+
+interface Data {
+  name: string;
+}
+
+// bu holatda bizga error bermaydi lekin bu biz bir xil nomga ega malumot yaratib ketishimiz mumkin degani emas chunki
+// biz agar ikkta bir xil nomga ega malumot"ni "interface" bilan elon qilib ketsak bizga "overwrite" holati yuzaga keladi.
+// shuning uchun biz bunday holatda interface o'rniga type ishlatishimiz maqsadga muvofiq bo'ladi.
