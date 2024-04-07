@@ -1,6 +1,6 @@
 "use strict";
 // type | interface
-let language = "uzbek";
+let language = "rus";
 const data = [
     { value: "uzbek" },
     { id: 2, value: "english" },
