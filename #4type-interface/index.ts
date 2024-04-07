@@ -1,10 +1,14 @@
 // type | interface
 
+// type keyword
 type Lang = "uzbek" | "english" | "rus";
+type DataType = { id?: number; value: Lang }[];
+
+// #discription: Biz TypeScript-dagi "type" kalit so'z orqali ma'lumotlar shaklini aniqlash uchun foydalanishimiz mumkin.
 
 let language: Lang = "rus";
 
-const data: { id?: number; value: Lang }[] = [
+const data: DataType = [
   { value: "uzbek" },
   { id: 2, value: "english" },
   { id: 3, value: "rus" },
@@ -13,3 +17,8 @@ const data: { id?: number; value: Lang }[] = [
 data.map((lang) => {
   language = lang.value;
 });
+
+// =========================
+
+// type"ga function biriktirish
+type Func = (title?: string, age?: number) => void;

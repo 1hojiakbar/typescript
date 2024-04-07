@@ -1,5 +1,6 @@
 "use strict";
 // type | interface
+// #discription: Biz TypeScript-dagi "type" kalit so'z orqali ma'lumotlar shaklini aniqlash uchun foydalanishimiz mumkin.
 let language = "rus";
 const data = [
     { value: "uzbek" },
