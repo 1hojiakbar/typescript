@@ -123,39 +123,44 @@
 
 // "extends" in interface
 
-interface Base {
-  id: number;
-  key: string;
-}
+// interface Base {
+//   id: number;
+//   key: string;
+// }
 
-interface ListBase extends Base {
-  found: number;
-  title: string;
-}
+// interface ListBase extends Base {
+//   found: number;
+//   title: string;
+// }
 
-interface TupleBase extends Base {
-  age: number;
-  title: string;
-}
+// interface TupleBase extends Base {
+//   age: number;
+//   title: string;
+// }
 
-const data: Base = {
-  id: 1,
-  key: "web",
-};
+// const data: Base = {
+//   id: 1,
+//   key: "web",
+// };
 
-const list: ListBase = {
-  id: 2,
-  key: "web",
-  found: 1234,
-  title: "webbrain",
-};
+// const list: ListBase = {
+//   id: 2,
+//   key: "web",
+//   found: 1234,
+//   title: "webbrain",
+// };
 
-const tuple: TupleBase = {
-  id: 1,
-  key: "web",
-  age: 12,
-  title: "webbrain",
-};
+// const tuple: TupleBase = {
+//   id: 1,
+//   key: "web",
+//   age: 12,
+//   title: "webbrain",
+// };
 
 // #discription: biz interface uchun inherit qilmoqchi bo'lsak type uchun "&" operator ishlatgan bo'lsak interface uchun esa
 // "extends" kalit so'zidan foydalanib malumotlarni bir-birga inherit qilishimiz mumkin.
+
+// =========================
+
+// #xulosa: Umuman olganda type va interface bizga yozayotkan malumotlarimizni soddalashtirishga va qayta-qayta
+// yozishni oldini olishga yordam beradi.
