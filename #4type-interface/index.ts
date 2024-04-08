@@ -82,38 +82,43 @@
 
 // =========================
 
-type Base = {
-  id: number;
-  key: string;
-};
+// type Base = {
+//   id: number;
+//   key: string;
+// };
 
-type ListBase = Base & {
-  found: number;
-  title: string;
-};
+// type ListBase = Base & {
+//   found: number;
+//   title: string;
+// };
 
-type TupleBase = Base & {
-  age: number;
-  title: string;
-};
+// type TupleBase = Base & {
+//   age: number;
+//   title: string;
+// };
 
-const data: Base = {
-  id: 1,
-  key: "web",
-};
+// const data: Base = {
+//   id: 1,
+//   key: "web",
+// };
 
-const list: ListBase = {
-  id: 2,
-  key: "web",
-  found: 1234,
-  title: "webbrain",
-};
+// const list: ListBase = {
+//   id: 2,
+//   key: "web",
+//   found: 1234,
+//   title: "webbrain",
+// };
 
-const tuple: TupleBase = {
-  id: 1,
-  key: "web",
-  age: 12,
-  title: "webbrain",
-};
+// const tuple: TupleBase = {
+//   id: 1,
+//   key: "web",
+//   age: 12,
+//   title: "webbrain",
+// };
+
+// #discription: biz "&" operatori orqali type bilan elon qilingan malumotlarini boshqa type"larga ham inherit qilishimiz
+// mumkin.
 
 // =========================
+
+// "extends" in interface
