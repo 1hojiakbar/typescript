@@ -1,24 +1,24 @@
 // Array in TS
 
 // let arr: [] = [];
-// that's a simple empty array
+// #description: that's a simple empty array
 
 // let ar: number[] = [1, 2, 3, 4, 5];
 // let ar: Array<number> = [12,3,4];
-// this array only accepts the number value
+// #description: this array only accepts the number value
+
+// ===========================
 
 // let arrStr: string[] = ["abc", "cba"];
 // let arr: Array<string> = ["abc", "cba"];
-// this array only accepts the string value
+// #description: this array only accepts the string value
 
 // ===========================
 
 // union with array
 // let arr: (number | string)[] = [1, 2, 3, "abc", "cba"];
 // let ar: Array<string | number> = [123, "abc"];
-// this array only accepts the string and number value
-
-// let ar: (number | string)[] = [1, 2, 3, 4, 5, 6, "abc", "werd"];
+// #description: this array only accepts the string and number value
 
 // ===========================
 
