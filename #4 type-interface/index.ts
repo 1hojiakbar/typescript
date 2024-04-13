@@ -62,7 +62,7 @@
 
 // type Obj = {}; // error: Duplicate identifier 'Obj'
 
-// biz agar type kalit so'zi bilan ikkta bir xil malumot turi yaratsak bizga error kelib chiqadi
+// biz agar type kalit so'zi bilan ikkta bir xil malumot turi yaratsak bizga error kelib chiqadi.
 
 // ============
 
