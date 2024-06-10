@@ -39,3 +39,44 @@
 // ];
 
 // console.log(data[0].id); // 1
+
+// ======================================================================
+
+// Tuple
+
+// First sytax for the tuple
+// const ar: [number, string] = [123, "abc"]; // correct case
+// const ar: [number, string] = ["abc", 123]; // incorrect case
+
+// ----------------
+
+// All array methods work for "tuple" ! ! !
+
+// Example
+// const arr: [number, boolean] = [123, true];
+// arr.push(123);
+
+// ----------------
+
+// const arr: [number, boolean] = [123, true];
+
+// arr[0] = "123"; // error
+// arr[0] = 12; // success
+// console.log(arr);
+
+// ----------------
+
+// const arr: [number, boolean] = [123, true];
+
+// arr[5] = "123"; // error because 5th yet index is undefined
+// console.log(arr); // [12, true]
+
+// ----------------
+
+// non-binding
+
+// Example
+// const arr: [number?, string?, boolean?] = [];
+
+// arr.push(12, 45);
+// console.log(arr);
