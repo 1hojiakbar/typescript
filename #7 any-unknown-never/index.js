@@ -21,3 +21,8 @@ getMessage("Hello");
 getMessage(3.1415);
 getMessage(true);
 // ------------------
+// never
+function throwError(message) {
+    throw new Error(message); // Bu funksiya hech qachon tugamaydi, chunki u har doim xato tashlaydi
+}
+let a; // this variable never get the value
