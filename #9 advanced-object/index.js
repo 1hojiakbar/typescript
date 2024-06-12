@@ -1,9 +1,11 @@
 "use strict";
 // Index Signatures
-let person = {
+const obj = {
     id: 1,
-    name: "Toshmat",
+    name: "Eshmat",
     age: 25,
-    title: [],
 };
-// person.name = 2; // error: Index signature in type 'Person' only permits reading
+const getData = (value) => {
+    console.log(obj[value]);
+};
+getData("name"); // Eshmat
