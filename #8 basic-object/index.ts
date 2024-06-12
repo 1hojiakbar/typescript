@@ -30,10 +30,22 @@
 
 // read only into writable
 
-let obj1: { readonly name: string } = { name: "eshmat" };
-let obj2: { name: string } = obj1;
+// let obj1: { readonly name: string } = { name: "eshmat" };
+// let obj2: { name: string } = obj1;
 
-obj2.name = "toshmat";
+// obj2.name = "toshmat";
 
-console.log(obj1.name); // toshmat
-console.log(obj2.name); // toshmat
+// console.log(obj1.name); // toshmat
+// console.log(obj2.name); // toshmat
+
+// ----------------
+
+// object with function / distructure
+
+type Type = { name: string };
+
+const getData2 = ({ name }: Type): void => {
+  console.log(name, "World");
+};
+
+getData2({ name: "Hello" }); // Hello World
