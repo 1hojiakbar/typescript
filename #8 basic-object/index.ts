@@ -42,10 +42,10 @@
 
 // object with function / distructure
 
-type Type = { name: string };
+// type Type = { name: string };
 
-const getData2 = ({ name }: Type): void => {
-  console.log(name, "World");
-};
+// const getData2 = ({ name }: Type): void => {
+//   console.log(name, "World");
+// };
 
-getData2({ name: "Hello" }); // Hello World
+// getData2({ name: "Hello" }); // Hello World
