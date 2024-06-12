@@ -1,9 +1,8 @@
 "use strict";
 // Index Signatures
-let obj = {
+let person = {
     id: 1,
-    name: "Hello",
-    found: 2024,
-    status: true,
+    name: "Toshmat",
+    age: 25,
 };
-console.log(obj);
+// person.name = 2; // error: Index signature in type 'Person' only permits reading

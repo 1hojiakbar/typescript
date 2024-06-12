@@ -2,15 +2,31 @@
 
 // sytax of index signature [key: KeyType]: ValueType;
 
-interface StringMap {
-  [key: string]: number | string | boolean;
+// interface Type {
+//   [key: string]: number | string | boolean;
+//   id: number;
+// }
+
+// let obj: Type = {
+//   id: 1,
+//   name: "Eshmat",
+//   found: 2024,
+//   status: true,
+// };
+
+// ----------------------------
+
+// Readonly Signatures
+
+interface Person {
+  readonly [key: string]: number | string | boolean;
+  id: number;
 }
 
-let obj: StringMap = {
+let person: Person = {
   id: 1,
-  name: "Hello",
-  found: 2024,
-  status: true,
+  name: "Toshmat",
+  age: 25,
 };
 
-console.log(obj);
+// person.name = 2; // error: Index signature in type 'Person' only permits reading
