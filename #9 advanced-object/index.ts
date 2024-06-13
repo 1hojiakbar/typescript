@@ -37,20 +37,20 @@
 
 // keyof
 
-interface Type {
-  id: number;
-  name: string;
-  age: number;
-}
+// interface Type {
+//   id: number;
+//   name: string;
+//   age: number;
+// }
 
-const obj: Type = {
-  id: 1,
-  name: "Eshmat",
-  age: 25,
-};
+// const obj: Type = {
+//   id: 1,
+//   name: "Eshmat",
+//   age: 25,
+// };
 
-const getData = (value: keyof typeof obj): void => {
-  console.log(obj[value]);
-};
+// const getData = (value: keyof typeof obj): void => {
+//   console.log(obj[value]);
+// };
 
-getData("name"); // Eshmat
+// getData("name"); // Eshmat
