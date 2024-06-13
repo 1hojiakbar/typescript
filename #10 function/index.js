@@ -1,13 +1,9 @@
 "use strict";
 // Function in the TS
-// function body
-function add(a, b) {
-    if (typeof a === "number" && typeof b === "number") {
-        return a + b;
-    }
-    else if (typeof a === "string" && typeof b === "string") {
-        return a + b;
-    }
+// // function body
+function add(a) {
+    console.log(a);
 }
-console.log(add(5, 10)); // 15
-console.log(add("Hello, ", "World!")); // Hello, World!
+let num = 10;
+console.log(add(num > 1 ? 1 : "1"));
+// -----------------------------

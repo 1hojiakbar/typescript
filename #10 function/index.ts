@@ -54,17 +54,31 @@
 
 // Function Overload
 
-function add(a: number, b: number): number;
-function add(a: string, b: string): string;
+// function add(a: number, b: number): number;
+// function add(a: string, b: string): string;
 
-// function body
-function add(a: unknown, b: unknown): unknown {
-  if (typeof a === "number" && typeof b === "number") {
-    return a + b;
-  } else if (typeof a === "string" && typeof b === "string") {
-    return a + b;
-  }
+// // function body
+// function add(a: unknown, b: unknown): unknown {
+//   if (typeof a === "number" && typeof b === "number") {
+//     return a + b;
+//   } else if (typeof a === "string" && typeof b === "string") {
+//     return a + b;
+//   }
+// }
+
+// console.log(add(5, 10)); // 15
+// console.log(add("Hello, ", "World!")); // Hello, World!
+
+function add(a: string): void;
+function add(a: number): void;
+
+// // function body
+function add(a: string | number): void {
+  console.log(a);
 }
 
-console.log(add(5, 10)); // 15
-console.log(add("Hello, ", "World!")); // Hello, World!
+let num: number = 10;
+
+console.log(add(num > 1 ? 1 : "1"));
+
+// -----------------------------
