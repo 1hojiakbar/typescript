@@ -26,12 +26,26 @@
 
 // Call Signature
 
-interface Calc {
-  (a: number, b: number): number; // Call Signature
+// interface Calc {
+//   (a: number, b: number): number; // Call Signature
+// }
+
+// const add: Calc = (a, b) => a + b;
+// const subtract: Calc = (a, b) => a - b;
+
+// console.log(add(3, 1)); // 4
+// console.log(subtract(4, 3)); // 1
+
+// -----------------------------
+
+// Constructor Signature
+
+interface Prop {
+  new (): Date;
 }
 
-const add: Calc = (a, b) => a + b;
-const subtract: Calc = (a, b) => a - b;
+const getData = (prop: Prop) => {
+  return new prop().getFullYear();
+};
 
-console.log(add(3, 1)); // 4
-console.log(subtract(4, 3)); // 1
+console.log(getData(Date)); // 2024
