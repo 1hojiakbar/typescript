@@ -1,6 +1,13 @@
 "use strict";
 // Function in the TS
-const getData = (prop) => {
-    return new prop().getFullYear();
-};
-console.log(getData(Date)); // 2024
+// function body
+function add(a, b) {
+    if (typeof a === "number" && typeof b === "number") {
+        return a + b;
+    }
+    else if (typeof a === "string" && typeof b === "string") {
+        return a + b;
+    }
+}
+console.log(add(5, 10)); // 15
+console.log(add("Hello, ", "World!")); // Hello, World!

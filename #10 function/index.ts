@@ -40,12 +40,31 @@
 
 // Constructor Signature
 
-interface Prop {
-  new (): Date;
+// interface Prop {
+//   new (): Date;
+// }
+
+// const getData = (prop: Prop) => {
+//   return new prop().getFullYear();
+// };
+
+// console.log(getData(Date)); // 2024
+
+// -----------------------------
+
+// Function Overload
+
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
+
+// function body
+function add(a: unknown, b: unknown): unknown {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  } else if (typeof a === "string" && typeof b === "string") {
+    return a + b;
+  }
 }
 
-const getData = (prop: Prop) => {
-  return new prop().getFullYear();
-};
-
-console.log(getData(Date)); // 2024
+console.log(add(5, 10)); // 15
+console.log(add("Hello, ", "World!")); // Hello, World!
