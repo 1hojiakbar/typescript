@@ -69,16 +69,16 @@
 // console.log(add(5, 10)); // 15
 // console.log(add("Hello, ", "World!")); // Hello, World!
 
-function add(a: string): void;
-function add(a: number): void;
+// -----------
 
-// // function body
-function add(a: string | number): void {
-  console.log(a);
-}
+// function add(a: string): void;
+// function add(a: number): void;
 
-let num: number = 10;
+// // // function body
+// function add(a: string | number): void {
+//   console.log(a);
+// }
 
-console.log(add(num > 1 ? 1 : "1"));
+// let num: number = 10;
 
-// -----------------------------
+// console.log(add(num > 1 ? 1 : "1"));
