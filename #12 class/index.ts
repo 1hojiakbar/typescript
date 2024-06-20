@@ -44,32 +44,59 @@
 
 // class with type & interface
 
+// type AType = {
+//   name: string;
+//   age: number;
+// };
+
+// class A implements AType {
+//   name = "abc";
+//   age = 123;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+
+//   update() {
+//     this.age = 321;
+//   }
+// }
+
+// interface BType {
+//   title: string;
+// }
+
+// class B extends A implements BType {
+//   title = "eshmat";
+// }
+
+// const first = new B("abcd");
+
+// first.update();
+// console.log(first.age);
+
+// -----------------------------------
+
 type AType = {
-  name: string;
-  age: number;
+  name?: string;
+  age?: number;
 };
 
-class A implements AType {
-  name = "abc";
-  age = 123;
-  constructor(name: string) {
-    this.name = name;
-  }
-
-  update() {
-    this.age = 321;
-  }
+interface BType {
+  title?: string;
 }
 
-interface BType {
-  title: string;
+class A implements AType {
+  constructor(props: number) {
+    console.log(props);
+  }
 }
 
 class B extends A implements BType {
-  title = "eshmat";
+  constructor(props: number) {
+    super(props);
+    // agar biz joriy class"ni boshqa class-dan inherit qilib uning constructor"ni overwrite qilimoqchi bo'lsak biz har doim 
+    // super yozib ketishimiz kerak aks holda bizga error beradi va undan keyingi "this" bilan bog'liq hamma kodlar super-dan kegin yoziladi
+  }
 }
 
-const first = new B("abcd");
-
-first.update();
-console.log(first.age);
+let test = new B(123);

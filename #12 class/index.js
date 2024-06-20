@@ -1,21 +1,15 @@
 "use strict";
 // // Class
 class A {
-    constructor(name) {
-        this.name = "abc";
-        this.age = 123;
-        this.name = name;
-    }
-    update() {
-        this.age = 321;
+    constructor(props) {
+        console.log(props);
     }
 }
 class B extends A {
-    constructor() {
-        super(...arguments);
-        this.title = "eshmat";
+    constructor(props) {
+        super(props);
+        // agar biz joriy class"ni boshqa class-dan inherit qilib uning constructor"ni overwrite qilimoqchi bo'lsak biz har doim 
+        // super yozib ketishimiz kerak aks holda bizga error beradi va undan keyingi "this" bilan bog'liq hamma kodlar super-dan kegin yoziladi
     }
 }
-const first = new B("abcd");
-first.update();
-console.log(first.age);
+let test = new B(123);
