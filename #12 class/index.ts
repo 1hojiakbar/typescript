@@ -76,27 +76,59 @@
 
 // -----------------------------------
 
-type AType = {
-  name?: string;
-  age?: number;
-};
+// type AType = {
+//   name?: string;
+//   age?: number;
+// };
 
-interface BType {
-  title?: string;
-}
+// interface BType {
+//   title?: string;
+// }
 
-class A implements AType {
-  constructor(props: number) {
-    console.log(props);
-  }
-}
+// class A implements AType {
+//   constructor(props: number) {
+//     console.log(props);
+//   }
+// }
 
-class B extends A implements BType {
-  constructor(props: number) {
-    super(props);
-    // agar biz joriy class"ni boshqa class-dan inherit qilib uning constructor"ni overwrite qilimoqchi bo'lsak biz har doim 
-    // super yozib ketishimiz kerak aks holda bizga error beradi va undan keyingi "this" bilan bog'liq hamma kodlar super-dan kegin yoziladi
-  }
-}
+// class B extends A implements BType {
+//   constructor(props: number) {
+//     super(props);
+//     // agar biz joriy class"ni boshqa class-dan inherit qilib uning constructor"ni overwrite qilimoqchi bo'lsak biz har doim
+//     // super yozib ketishimiz kerak aks holda bizga error beradi va undan keyingi "this" bilan bog'liq hamma kodlar super-dan kegin yoziladi
+//   }
+// }
 
-let test = new B(123);
+// let test = new B(123);
+
+// -----------------------------------
+
+// Abstract
+
+// abstract class GetCar {
+//   abstract name: string;
+//   abstract update(a: string): string;
+// }
+
+// class Car extends GetCar {
+//   name = "eshmat";
+//   update(a: string): string {
+//     return a;
+//   }
+// }
+
+// -----------------------------------
+
+// // Static classes
+// class Get {
+//   static update() {
+//     console.log("static update");
+//   }
+//   update() {
+//     console.log("general update");
+//   }
+// }
+// // reserved keyword "name"
+// const get = new Get();
+// Get.update(); // static update
+// get.update(); // general update
